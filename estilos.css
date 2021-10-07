@@ -1,29 +1,32 @@
-body {
-    background: linear-gradient(200deg, #27156E, #6A2A88, #9F4981);
+/*Estilos Pagina Inicio*/
+
+@import url('http://fonts.cdnfonts.com/css/kollektif');                
+
+#inicio {
+    background: #f9faf8;
     font-family: 'Muli';
 }
 
-#nav_drawer {
+#nav_drawer_inicio {
+    width: 70%;
+    height: 100%;
+    padding-top: 0.5%;
+    padding-left: 30%;
+}
+
+.nav_drawer_inicio {
     width: 15%;
-    height: 120px;
-    /* background-color:#3DB2FF; */
+    height: 220px;
+    background-color: #f9faf8;
     padding-top: 10px;
     margin-left: 4px;
+    margin-top: 14%;
+    
 }
 
-.nav_drawer {
-    width: 15%;
-    height: 500px;
-    background-color: #3DB2FF;
-    padding-top: 1px;
-    margin-left: 4px;
-    padding-bottom: 10px;
-}
-
-
-#menu {
-    color: #FF2442;
-    background: #FFEDDA;
+#opcion1 {
+    color: #f9faf8;
+    background: #FF2626;
     border: 0;
     border-radius: .25rem;
     border: #FFEDDA 1px solid;
@@ -31,6 +34,36 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
+    font-weight: bold;
+    font-family: 'Kollektif', sans-serif;
+}
+
+#opcion2 {
+    color: #f9faf8;
+    background: #5D8233;
+    border: 0;
+    border-radius: .25rem;
+    border: #FFEDDA 1px solid;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Kollektif', sans-serif;
+}
+
+#opcion3 {
+    color: #f9faf8;
+    background: #FACE7F;
+    border: 0;
+    border-radius: .25rem;
+    border: #FFEDDA 1px solid;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Kollektif', sans-serif;
 }
 
 a {
@@ -42,8 +75,63 @@ a {
     text-align: center;
 }
 
+.img-thumbnail {
+
+    background-color: #fff;
+    max-width: 120%;
+    height: auto;
+    float: right;
+    padding-bottom: 0.5%;
+}
+
+
+/*Estilos Pagina Index*/
+
+body {
+    background: #f9faf8;
+    font-family: 'Muli';
+}
+
+#nav_drawer {
+    width: 17%;
+    height: 150px;
+    padding-left: 1.4%;
+    margin-left: 4px;
+}
+
+.nav_drawer {
+    width: 20%;
+    height: 480px;
+    background-color: #f9faf8;
+    margin-left: 4px;
+}
+
+
+#menu {
+    color: #0e0304;
+    background: #BAC964;
+    border: 0;
+    border-radius: .25rem;
+    margin: 20px;
+    margin-top: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a {
+    font-size: 1.0em;
+    transition: all 0.5s ease;
+    display: block;
+    color: rgba(255, 255, 255, .5);
+    background-color: #38A3A5;
+    text-align: center;
+    font-family: 'Kollektif', sans-serif;
+}
+
 #menu:hover {
-    background-color: #57CC99;
+    background-color: #5D8233;
     color: #FFEDDA;
 }
 
@@ -55,4 +143,30 @@ img {
     border-radius: .25rem;
     max-width: 96%;
     height: auto;
+    float:right;
+}
+
+#titulo {
+    width: 470%;
+    height: 130px;
+    margin-left:110%;
+    background-color: #ff2626;
+}
+
+h1{
+    border: 1px solid #2d4b69;
+    border-radius: .25rem;
+    position:absolute;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    font-family: 'Kollektif', sans-serif;
+    font-size: 4.5em;
+}
+
+#contenido {
+    width: 470%;
+    height: 320%;
+    margin-left:110%;
+    background-color: #f6ebcf;
 }
