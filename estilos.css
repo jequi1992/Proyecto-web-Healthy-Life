@@ -174,3 +174,15 @@ img {
     margin-left:110%;
     background-color: #f6ebcf;
 }
+
+/*Estilos Formulario*/
+
+input:valid,
+textarea:valid {
+    background: green;
+}
+
+input:invalid,
+textarea:invalid {
+    background: red;
+}
