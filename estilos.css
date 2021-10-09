@@ -178,11 +178,14 @@ img {
 /*Estilos Formulario*/
 
 input:valid {
-  background: green;
+  border: 2px dashed red;
+  box-shadow: 0 0 5px 1px red;
 }
 
-input:invalid {
-  background: red;
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+  box-shadow: none;
+
 }
 
 #Formulario div,
@@ -229,7 +232,7 @@ html {
 #formRegistro {
   margin: 120px auto;
   width: 343px;
-  height: 464px;
+  height: 470px;
   -webkit-border-radius: 8px/7px;
   -moz-border-radius: 8px/7px;
   border-radius: 8px/7px;
@@ -295,7 +298,8 @@ input[type=radio]:checked+label:after {
 
 
 #formRegistro input[type=text],
-input[type=password], input[type=number]{
+input[type=password],
+input[type=tel] {
   width: 200px;
   height: 39px;
   -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
@@ -365,6 +369,21 @@ a.button:hover {
 
 }
 
-input[type=number]{
+#campoTelefono {
   margin-bottom: 25px;
+}
+
+.has-success .form-control{
+  border-bottom: 2px solid #168b3f;
+}
+
+.has-danger .form-control {
+  border-bottom: 2px solid #dc1d34;
+}
+
+.form-group .text-help {
+  color: #dc1d34;
+  font-size: 12px;
+  text-align: justify;
+  display:inline-block;
 }
