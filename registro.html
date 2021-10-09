@@ -16,33 +16,30 @@
     <div id="formRegistro">
         <form name="meu_form" class="data-ax-form">
             <h1>Formulario de Registro</h1>
-            <p class="nome">
+
                 <label id="icon" for="name"><i class="icon-user"></i></label>
                 <input type="text" id="campoNombre" placeholder="Tiago Vale" name="nombre" required />
-            </p>
-            <p>
+
                 <label id="icon" for="name"><i class="icon-envelope "></i></label>
                 <input type="text" name="name" id="name" placeholder="Email" required multiple="multiple" />
-            </p>
-            <p>
+
                 <label id="icon" for="name"><i class="icon-shield"></i></label>
-                <input type="password" name="name" id="name" placeholder="Contraseña" required />
-            </p>
-            <p>
-                <label id="icon" for="Telefono"><i class="icon-shield"></i></label>
-                <input type="text" name="name" id="name" placeholder="Telefono Movil" required />
-            </p>
+                <input type="password" name="name" id="name" placeholder="Contraseña" required data-pristine-required-message="Please choose a password" data-pristine-pattern= "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/" data-pristine-pattern-message="Minimum 8 characters, at least one uppercase letter, one lowercase letter and one number" class="form-control"/>
 
+                <label id="icon" for="name"><i class="icon-phone"></i></label>
+                <input type="number" name="name" id="name" placeholder="Telefono Movil" required />
+
+                
+                <div class="gender">
+                    <input type="radio" value="None" id="male" name="gender" checked />
+                    <label for="male" class="radio" chec>Masculino</label>
+                    <input type="radio" value="None" id="female" name="gender" />
+                    <label for="female" class="radio">Femenino</label>
+                </div>
             <a href="#" class="button" type="submit" onclick="Enviar();" value="Enviar">Registrar</a>
-
-            <div class="gender">
-                <input type="radio" value="None" id="male" name="gender" checked />
-                <label for="male" class="radio" chec>Masculino</label>
-                <input type="radio" value="None" id="female" name="gender" />
-                <label for="female" class="radio">Femenino</label>
-            </div>
         </form>
     </div>
+    <script src="js/pristine.min.js"></script>
 </body>
 
 </html>
