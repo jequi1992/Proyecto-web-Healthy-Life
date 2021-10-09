@@ -5,33 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./estilos.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="Formulario">
     <div id="formRegistro">
         <form name="meu_form" class="data-ax-form">
             <h1>Formulario de Registro</h1>
             <p class="nome">
-                <label for="nome">Nombre Completo</label>
+                <label id="icon" for="name"><i class="icon-user"></i></label>
                 <input type="text" id="campoNombre" placeholder="Tiago Vale" name="nombre" required />
             </p>
             <p>
-                <label for="email">Correo Electronico</label>
-                <input type="email" id="campoCorreo" placeholder="fulano@mail.com" name="correo" multiple="multiple"
-                    required />
+                <label id="icon" for="name"><i class="icon-envelope "></i></label>
+                <input type="text" name="name" id="name" placeholder="Email" required multiple="multiple" />
             </p>
             <p>
-                <label for="email">Contraseña</label>
-                <input type="password" id="campoContraseña" placeholder="Contraseña" name="password" required />
+                <label id="icon" for="name"><i class="icon-shield"></i></label>
+                <input type="password" name="name" id="name" placeholder="Contraseña" required />
             </p>
             <p>
-                <label for="email">Telefono Movil</label>
-                <input type="tel" id="campotelefono" placeholder="Telefono Movil" name="Telefono" required />
+                <label id="icon" for="Telefono"><i class="icon-shield"></i></label>
+                <input type="text" name="name" id="name" placeholder="Telefono Movil" required />
             </p>
 
-            <p class="submit"> <input type="submit" onclick="Enviar();" value="Enviar" />
-            </p>
+            <a href="#" class="button" type="submit" onclick="Enviar();" value="Enviar">Registrar</a>
+
+            <div class="gender">
+                <input type="radio" value="None" id="male" name="gender" checked />
+                <label for="male" class="radio" chec>Masculino</label>
+                <input type="radio" value="None" id="female" name="gender" />
+                <label for="female" class="radio">Femenino</label>
+            </div>
         </form>
     </div>
 </body>
