@@ -1,4 +1,5 @@
 /*Estilos Pagina Inicio*/
+/* @media only screen and (min-device-width: 1024px) and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio:1) {} */
 
 @import url('http://fonts.cdnfonts.com/css/kollektif');
 @import url('http://fonts.cdnfonts.com/css/playlist');
@@ -232,7 +233,7 @@ html {
 #formRegistro {
   margin: 120px auto;
   width: 343px;
-  height: 470px;
+  height: auto;
   -webkit-border-radius: 8px/7px;
   -moz-border-radius: 8px/7px;
   border-radius: 8px/7px;
@@ -298,8 +299,7 @@ input[type=radio]:checked+label:after {
 
 
 #formRegistro input[type=text],
-input[type=password],
-input[type=tel] {
+input[type=password]{
   width: 200px;
   height: 39px;
   -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
@@ -336,14 +336,13 @@ input[type=tel] {
   margin-bottom: 30px;
 }
 
-
 a.button {
   font-size: 14px;
   font-weight: 600;
   color: white;
   padding: 6px 25px 0px 12px;
   margin: 10px 86px 20px 0px;
-  float: right;
+  display:inline-block;
   text-decoration: none;
   width: 50px;
   height: 27px;
@@ -357,7 +356,7 @@ a.button {
   transition: all 0.1s linear 0s;
   top: 6px;
   position: relative;
-  text-align: center;
+  margin-left: 34%;
 }
 
 a.button:hover {
@@ -370,10 +369,10 @@ a.button:hover {
 }
 
 #campoTelefono {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
-.has-success .form-control{
+.has-success .form-control {
   border-bottom: 2px solid #168b3f;
 }
 
@@ -385,5 +384,5 @@ a.button:hover {
   color: #dc1d34;
   font-size: 12px;
   text-align: justify;
-  display:inline-block;
+  display: inline-block;
 }
