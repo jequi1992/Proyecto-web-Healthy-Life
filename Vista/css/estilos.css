@@ -399,7 +399,7 @@ a.button:hover {
 /*Estilos Aspectos Generales*/
 #botonNocturno{
   position: relative;
-  background: url(img\ModoNocturno.png);
+  background: url(/img/ModoNocturno.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
@@ -412,7 +412,7 @@ a.button:hover {
 
 #botonDiurno{
   position: relative;
-  background: url(img\ModoDiurno.png);
+  background: url(/img/ModoDiurno.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
@@ -425,7 +425,7 @@ a.button:hover {
 
 #botonDesarrolladores{
   position: relative;
-  background: url(img\Desarrolladores.png);
+  background: url(/img/Desarrolladores.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
