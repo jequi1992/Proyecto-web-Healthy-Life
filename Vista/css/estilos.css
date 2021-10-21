@@ -26,6 +26,27 @@
 
 }
 
+#buttonreg_nav {
+  color: #f9faf8;
+  background: #FF2626;
+  border: 0;
+  border-radius: .25rem;
+  border: #FFEDDA 1px solid;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Kollektif', sans-serif;
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 30px;
+  border: none;
+  margin: 200px 450px;  
+  cursor: pointer; 
+  font-size: large;
+}
+
+
 #opcion1 {
   color: #f9faf8;
   background: #FF2626;
