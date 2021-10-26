@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM usuarios WHERE edad >18

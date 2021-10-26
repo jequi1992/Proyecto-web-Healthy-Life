@@ -208,50 +208,6 @@ img {
 
 /*Estilos Formulario*/
 
-input:valid {
-  border: 2px dashed red;
-  box-shadow: 0 0 5px 1px red;
-}
-
-input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
-  box-shadow: none;
-
-}
-
-#Formulario div,
-li,
-h1,
-form,
-input,
-p {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style: none
-}
-
-:focus {
-  outline: none
-}
-
-#Formulario #formRegistro {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #4c4c4c;
-}
-
-#formRegistro h1 {
-  font-size: 32px;
-  font-weight: 300;
-  color: #4c4c4c;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-
 html {
   background-color: #ffffff;
   display: flex;
@@ -260,161 +216,56 @@ html {
 
 }
 
-#formRegistro {
-  margin: 120px auto;
-  width: 343px;
-  height: auto;
-  -webkit-border-radius: 8px/7px;
-  -moz-border-radius: 8px/7px;
-  border-radius: 8px/7px;
-  background-color: #ebebeb;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-  border: solid 1px #cbc9c9;
-
+.registroFormulario{
+  background: #FF2626;
+  width: 750px;
+  height: 400px;
+  position:absolute;
+  margin:  100px 0px 0px -10px;  
+ 
 }
 
-input[type=radio] {
-  visibility: hidden;
+.registroFormulario h1{
+  font-family: 'Kollektif', sans-serif;  
+  color:white;
+  text-align: center;
 }
 
-#formRegistro form {
-  margin: 0 30px;
-}
-
-.gender label.radio {
-  cursor: pointer;
-  text-indent: 35px;
-  overflow: visible;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.gender label.radio:before {
-  background: #3a57af;
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-}
-
-.gender label.radio:after {
-  opacity: 0;
-  content: '';
-  position: absolute;
-  width: 0.5em;
-  height: 0.25em;
-  background: transparent;
-  top: 7.5px;
-  left: 4.5px;
-  border: 3px solid #ffffff;
-  border-top: none;
-  border-right: none;
-
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-input[type=radio]:checked+label:after {
-  opacity: 1;
-}
-
-
-#formRegistro input[type=text],
+.registroFormulario input[type=text],
 input[type=password]{
-  width: 200px;
-  height: 39px;
-  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
-  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
-  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
-  background-color: #fff;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  border: solid 1px #cbc9c9;
-  margin-left: -5px;
-  margin-top: 13px;
-  padding-left: 10px;
+  font-family: 'Kollektif', sans-serif;  
+  width: 40%;
+  padding: 10px; 
+  font-size: 1em;
+  border:none; 
 }
 
-#icon {
-  display: inline-block;
-  width: 30px;
-  background-color: #3a57af;
-  padding: 8px 0px 8px 15px;
-  margin-left: 15px;
-  -webkit-border-radius: 4px 0px 0px 4px;
-  -moz-border-radius: 4px 0px 0px 4px;
-  border-radius: 4px 0px 0px 4px;
+.registroFormulario input[type=radio]{
+  font-family: 'Kollektif', sans-serif;  
+  width: 8.5%;
+  padding: 10px; 
+  font-size: 1em;
+  background: white;
+}
+
+
+.registroFormulario label {
+  color:white;
+  font-family: 'Kollektif', sans-serif;  
+  font-size: 1.2em;
+}
+
+.registroFormulario i{
+  background: white;
+  padding: 9.6px; 
+  font-size: 1em;
+  border:2px solid #FF2626;
+}
+.registroFormulario p{
+  margin: 3px;
+  font-family: 'Kollektif', sans-serif;  
   color: white;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
-  border: solid 0px #cbc9c9;
-}
 
-.gender {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-a.button {
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  padding: 6px 25px 0px 12px;
-  margin: 10px 86px 20px 0px;
-  display:inline-block;
-  text-decoration: none;
-  width: 50px;
-  height: 27px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #3a57af;
-  -webkit-box-shadow: 0 3px rgba(58, 87, 175, .75);
-  -moz-box-shadow: 0 3px rgba(58, 87, 175, .75);
-  box-shadow: 0 3px rgba(58, 87, 175, .75);
-  transition: all 0.1s linear 0s;
-  top: 6px;
-  position: relative;
-  margin-left: 34%;
-}
-
-a.button:hover {
-  top: 3px;
-  background-color: #2e458b;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-
-}
-
-#campoTelefono {
-  margin-bottom: 10px;
-}
-
-.has-success .form-control {
-  border-bottom: 2px solid #168b3f;
-}
-
-.has-danger .form-control {
-  border-bottom: 2px solid #dc1d34;
-}
-
-.form-group .text-help {
-  color: #dc1d34;
-  font-size: 12px;
-  text-align: justify;
-  display: inline-block;
 }
 
 /*Estilos Aspectos Generales*/
